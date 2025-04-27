@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { io } from 'socket.io-client';
 import Peer from 'simple-peer/simplepeer.min.js'; // 👈 New import
 
-const socket = io('http://192.168.43.44:5000'); // Tumhara backend URL
+const socket = io('https://liveinteraction.onrender.com'); // Tumhara backend URL
 
 function App() {
   const [message, setMessage] = useState('');
